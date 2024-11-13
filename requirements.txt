@@ -1,0 +1,10 @@
+pandas==2.2.3
+flake8==7.1.1
+pytest==8.3.3
+black==24.10.0
+reportlab==4.2.5
+requests==2.32.3
+matplotlib==3.9.2
+dbldatagen==0.4.0.post1
+mypy==1.12.1
+pre-commit==4.0.1

@@ -1,0 +1,51 @@
+2024-11-13 16:30:36,766:ExpenseManager:run_expense_manager:INFO:Start of expense manager scripts.
+2024-11-13 16:30:36,766:ExpenseManager:run_expense_manager:INFO:DATA PATH: /Users/bk/PycharmProjects/expense_manager/data
+2024-11-13 16:30:36,766:ExpenseManager:run_expense_manager:INFO:PDF FILE: /Users/bk/PycharmProjects/expense_manager/data/monthly_expense_report_112024.pdf
+2024-11-13 16:30:36,766:ExpenseManager:run_expense_manager:INFO:TRANSACTION FILE: /Users/bk/PycharmProjects/expense_manager/data/transaction_data_112024.csv
+2024-11-13 16:30:37,646:ExpenseManager:run_expense_manager:INFO:Available Currency: {'BRL', 'AUD', 'KRW', 'USD', 'BGN', 'CNY', 'HKD', 'PHP', 'DKK', 'ILS', 'ZAR', 'MXN', 'RON', 'SEK', 'CAD', 'NOK', 'CZK', 'EUR', 'IDR', 'TRY', 'MYR', 'ISK', 'NZD', 'HUF', 'CHF', 'THB', 'GBP', 'PLN', 'INR', 'JPY', 'SGD'}
+2024-11-13 16:30:37,646:ExpenseManager:exchange:INFO:URL: https://api.frankfurter.app/latest?base=USD&to=INR
+2024-11-13 16:30:38,223:ExpenseManager:exchange:INFO:API Response: {'amount': 1.0, 'base': 'USD', 'date': '2024-11-12', 'rates': {'INR': 84.38}}
+2024-11-13 16:30:38,224:ExpenseManager:run_expense_manager:INFO:Expenses Definition: {'rent': 7, 'loan': 20, 'tax': 26, 'gift': 3, 'dining': 2, 'other': 4, 'utility': 2, 'transport': 6, 'grocery': 4, 'investment': 20, 'healthcare': 2, 'entertainment': 2}
+2024-11-13 16:30:38,264:ExpenseManager:expense_manager:INFO:Expense file load complete.
+2024-11-13 16:30:38,269:ExpenseManager:expense_manager:INFO:Expense file sorted by column expense_category
+2024-11-13 16:30:38,269:ExpenseManager:run_expense_manager:INFO:Monthly savings Goal: 150000
+2024-11-13 16:30:38,303:ExpenseManager:run_expense_manager:INFO:Report Month: Oct-2024
+2024-11-13 16:30:38,303:ExpenseManager:run_expense_manager:INFO:Monthly Savings Goal: Monthly Savings goal is achieved by 33.99%
+2024-11-13 16:30:38,303:ExpenseManager:run_expense_manager:INFO:Monthly income: 586740
+2024-11-13 16:30:38,303:ExpenseManager:run_expense_manager:INFO:Monthly expenses: 387314
+2024-11-13 16:30:38,303:ExpenseManager:run_expense_manager:INFO:Monthly Savings: 199426
+2024-11-13 16:30:38,303:ExpenseManager:run_expense_manager:INFO:Monthly expense-to-income ratio: 0.6601 [66.01%]
+2024-11-13 16:30:38,309:ExpenseManager:run_expense_manager:DEBUG:Monthly Summary:
+      expense_category  amount
+0           dining   32280
+1    entertainment   32309
+2       healthcare   34480
+3             rent  174624
+4           salary  586740
+5        transport   39793
+6          grocery   40593
+7          utility   33235
+2024-11-13 16:30:38,313:ExpenseManager:run_expense_manager:DEBUG:Expense Summary:
+      expense_category  amount  expense_percent
+0           dining   32280                8
+1    entertainment   32309                8
+2       healthcare   34480                9
+3             rent  174624               45
+5        transport   39793               10
+6          grocery   40593               10
+7          utility   33235                9
+2024-11-13 16:30:38,313:ExpenseManager:run_expense_manager:INFO:Insights & Recommendations:
+2024-11-13 16:30:38,313:ExpenseManager:run_expense_manager:INFO:Monthly Savings goal is achieved by 33.99%
+2024-11-13 16:30:38,313:ExpenseManager:run_expense_manager:INFO:It is recommended to reduce dining [2%] expenses by 6% to meet savings goal.
+2024-11-13 16:30:38,313:ExpenseManager:run_expense_manager:INFO:It is recommended to reduce entertainment [2%] expenses by 6% to meet savings goal.
+2024-11-13 16:30:38,313:ExpenseManager:run_expense_manager:INFO:It is recommended to reduce healthcare [2%] expenses by 7% to meet savings goal.
+2024-11-13 16:30:38,313:ExpenseManager:run_expense_manager:INFO:It is recommended to reduce rent [7%] expenses by 38% to meet savings goal.
+2024-11-13 16:30:38,314:ExpenseManager:run_expense_manager:INFO:It is recommended to reduce transport [6%] expenses by 4% to meet savings goal.
+2024-11-13 16:30:38,314:ExpenseManager:run_expense_manager:INFO:It is recommended to reduce grocery [4%] expenses by 6% to meet savings goal.
+2024-11-13 16:30:38,314:ExpenseManager:run_expense_manager:INFO:It is recommended to reduce utility [2%] expenses by 7% to meet savings goal.
+2024-11-13 16:30:38,314:ExpenseManager:run_expense_manager:INFO:Generating Charts.....
+2024-11-13 16:30:39,266:ExpenseManager:charts:INFO:Downloading chart Monthly Summary             .................. [Complete]
+2024-11-13 16:30:39,918:ExpenseManager:charts:INFO:Downloading chart Expense by Category         .................. [Complete]
+2024-11-13 16:30:40,519:ExpenseManager:charts:INFO:Downloading chart Monthly Summary by category .................. [Complete]
+2024-11-13 16:30:40,519:ExpenseManager:run_expense_manager:INFO:Generating PDF reports.....
+2024-11-13 16:30:41,559:ExpenseManager:run_expense_manager:INFO:PDF report download ............[complete]
